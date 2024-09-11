@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fody Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container max-w-none bg-[#F488C6]">
+      <!-- Navbar -->
+      <header
+        class="flex fixed top-0 left-0 w-full bg-transparent text-white p-5 z-10 justify-end pr-[300px]"
+      >
+        <nav class="mt-5">
+          <a href="#home" class="mr-4 hover:underline text-white text-2xl">
+            Home
+          </a>
+          <a href="#about" class="mr-4 hover:underline text-white text-2xl">
+            About
+          </a>
+          <a href="#menu" class="mr-4 hover:underline text-white text-2xl">
+            Menu
+          </a>
+          <a href="#best-seller" class="hover:underline text-white text-2xl">
+            Best Seller
+          </a>
+          <a href="#contact" class="hover:underline text-white pl-4 text-2xl">
+            Contact
+          </a>
+        </nav>
+      </header>
+
+      <!-- HERO-SECTION -->
+      <div class="hero-section h-[100vh] px-[100px] pt-[180px] flex">
+        <div>
+          <h1
+            class="w-[600px] text-7xl font-spicy font-bold text-white tracking-wider text-shadow"
+          >
+            Delight in Every Scoop
+          </h1>
+          <p class="w-[700px] text-xl text-white pt-4">
+            At Sundae Everydae we create the ultimate ice cream sundaes with the
+            finest ingredients. Each scoop is a blend of creamy texture and rich
+            flavors, designed to bring a smile with every bite. Dive into pure
+            happiness and enjoy the sweetest moments.
+          </p>
+
+          <div class="flex gap-4 mt-12">
+            <button
+              class="border-2 border-white p-4 rounded-lg w-[200px] text-white text-xl"
+            >
+              Check Menu
+            </button>
+            <button
+              class="bg-pink-200 rounded-lg w-[200px] text-white text-xl hover:bg-pink-300"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT-SECTION -->
+      <div class="bg-secondary h-[100vh]">
+        <div class="mx-4 px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-6 rounded-tl-[200px] w-[55vh ] rounded-br-none h-[700px] rounded-tr-none rounded-bl-none shadow-lg mt-14 flex justify-center items-center"
+            >
+              <!-- <img src= alt="" /> -->
+            </div>
+            <div class="pl-[70px]">
+              <div>
+                <h2
+                  class="text-8xl font-bold text-center mb-8 pt-[50px] font-spicy text-white"
+                >
+                  About
+                </h2>
+              </div>
+              <p class="text-xl mb-6 w-[500px] text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div
+                class="w-[100vh] bg-[#F22FBC] h-[150px] mt-[176px] ml-[-190px] items-center flex justify-center"
+              >
+                <h1 class="text-7xl text-white font-spicy">Since 2023</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MENU-SECTION -->
+      <div class="menu-section h-[140vh]">
+        <h1 class="text-center text-white font-spicy text-6xl mt-[50px]">
+          Our Menu
+        </h1>
+
+        <div class="category flex gap-4 justify-center mt-8">
+          <button
+            class="text-white border-2 border-white w-[200px] h-[50px] rounded-full text-2xl"
+          >
+            All
+          </button>
+          <button
+            class="text-white border-2 border-white w-[200px] h-[50px] rounded-full text-2xl"
+          >
+            Food & Snacks
+          </button>
+          <button
+            class="text-white border-2 border-white w-[200px] h-[50px] rounded-full text-2xl"
+          >
+            Drinks
+          </button>
+          <button
+            class="text-white border-2 border-white w-[200px] h-[50px] rounded-full text-2xl"
+          >
+            Ice Cream
+          </button>
+        </div>
+        <div id="tranding">
+          <div class="container">
+            <h1 class="text-center section-heading"></h1>
+          </div>
+          <div class="container">
+            <div class="swiper tranding-slider">
+              <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/tranding-food-1.png" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">$20</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Special Pizza</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/tranding-food-2.png" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">$20</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Meat Ball</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/tranding-food-3.png" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">$40</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Burger</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/tranding-food-4.png" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">$15</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Frish Curry</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/tranding-food-5.png" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">$15</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Pane Cake</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/tranding-food-6.png" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">$20</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Vanilla cake</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="images/tranding-food-7.png" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">$8</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Straw Cake</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+              </div>
+
+              <div class="tranding-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[90vh] bg-secondary">
+        <div class="flex p-[100px] justify-around">
+          <img
+            src="./images/tranding-food-1.png"
+            alt=""
+            width="400px"
+            class="rounded-xl"
+          />
+          <div class="best-seller">
+            <h1 class="font-spicy text-6xl text-white mt-[100px]">
+              Our Best Seller
+            </h1>
+            <p class="text-white text-xl w-[644px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[90vh] bg-white">
+        <div class="flex py-[100px] justify-center item-center gap-8">
+          <div class="contact">
+            <h1 class="font-spicy text-5xl mb-6">
+              We'd Love to Hear From You!
+            </h1>
+            <p class="w-[600px] text-xl mb-4">
+              Whether you have questions, feedback, or simply want to say hello,
+              feel free to reach out to us. Our team is always here to help you!
+            </p>
+            <div class="contact-icon">
+              <p>💀 Jl. Jeruk Dusun Krajan Semboro</p>
+              <p>💀 +62 00000000000</p>
+              <p>💀 Sundaeeverydae@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-form flex flex-col gap-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="border-2 border-[#707070] w-[400px] rounded-lg p-3"
+            />
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="border-2 border-[#707070] w-[400px] rounded-lg p-3"
+            />
+            <textarea
+              placeholder="Message"
+              class="border-2 border-[#707070] w-[400px] h-[300px] rounded-lg p-3"
+            ></textarea>
+            <button
+              class="w-[400px] h-[70px] bg-[#FF93D1] text-white text-xl rounded-xl hover:bg-[#EF51AC]"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer h-[50vh] bg-[#971B7B]">
+        <div class="flex justify-between py-[50px] px-6">
+          <div class="footer-image">
+            <img src="./images/footer-image.png" alt="image" width="250px" />
+          </div>
+
+          <div
+            class="footer-container flex flex-col justify-center item-center"
+          >
+            <div class="flex gap-4 text-white text-2xl">
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Menu</a>
+              <a href="">Best Seller</a>
+              <a href="">Contact</a>
+            </div>
+            <div class="icon-footer flex gap-4 justify-center py-4">
+              <a href="">
+                <img src="./images/instagram-icon.png" alt="" width="50px" />
+              </a>
+              <a href="">
+                <img src="./images/tiktok-icon.png" alt="" width="50px" />
+              </a>
+              <a href="">
+                <img src="./images/wa-icon.png" alt="" width="50px" />
+              </a>
+            </div>
+            <p class="text-white text-xl text-center">
+              Coppyright by Efendi-san
+            </p>
+          </div>
+          <div class="w-[280px]"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>
